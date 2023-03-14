@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+/* PALETA */
+
+/*
+#2a091c
+#87758f
+#85aab0
+#a3c3b8
+#e3edd2
+*/
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: #87758f;
+    font-family: 'Righteous', cursive;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 4px solid #e3edd2;
+    width: 800px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #e3edd255;
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.max-size {
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.efeito { 
+    transition: width 1s ease;
+}
+
+.efeito:hover {
+    width: 250px;
+}
